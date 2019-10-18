@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#000"
+        android:background="#00ff00"
+        />
+
+    <Button
+        android:onClick="bt1"
+        android:id="@+id/bt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="添加一条数据"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv" />
+
+    <Button
+        android:onClick="bt12"
+        android:id="@+id/bt12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="添加多条数据"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt1" />
+
+
+    <Button
+        android:onClick="bt2"
+        android:id="@+id/bt2"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="删减一条数据"
+        android:textSize="20sp"
+        android:textColor="#000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt12" />
+
+    <Button
+        android:onClick="bt23"
+        android:id="@+id/bt23"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="删减整个表数据"
+        android:textSize="20sp"
+        android:textColor="#000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt2" />
+
+    <Button
+        android:onClick="bt3"
+        android:id="@+id/bt3"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="查询所有数据"
+        android:textSize="20sp"
+        android:textColor="#000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt23" />
+
+    <Button
+        android:id="@+id/bt4"
+        android:onClick="bt4"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="查询一条ID=1的数据"
+        android:textSize="20sp"
+        android:textColor="#000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt3" />
+
+    <Button
+        android:onClick="bt5"
+        android:id="@+id/bt5"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="多表查询"
+        android:textSize="20sp"
+        android:textColor="#000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt4" />
+
+</android.support.constraint.ConstraintLayout>

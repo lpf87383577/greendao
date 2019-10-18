@@ -1,0 +1,9 @@
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+
+greendao {
+    schemaVersion 1 //数据库版本
+    targetGenDir 'src/main/java' //指定生成代码的目录
+    daoPackage 'com.shinhoandroid.test0909.db' //包名+代码生成目录
+    //generateTests false //设置为true以自动生成单元测试。
+    //targetGenDirTests 'src/main/java' //应存储生成的单元测试的基本目录。默认为 src / androidTest / java。
+}
